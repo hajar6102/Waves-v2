@@ -86,19 +86,27 @@ header ul.ul-border{
     height: auto;
     width: 600px ;
 }
-.special-btn{
-    border-radius: 20px;
-    padding: 5px 15px;
-    color: white;
-    border: 1px solid gray;
-    background-color: #154acf;
-    box-shadow: inset 1px 1px 6px;
-}
 
 .home .text{
     width: 500px;
 }
+.home .text .main-heading{
+    font-size:55px;
+
 }
+}
+.special-btn{
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: white;
+    /* border: 1px solid white; */
+    background-color: #154acf;
+    box-shadow: 0px 0px 7px;
+}
+.special-btn:hover, .special-btn:focus{
+    background-color: #1d51d4;
+}
+
 .home .special-txt
 {
     background: linear-gradient(263deg, #9D9D9D 60%, #EDEDED 73%, #9D9D9D 87%);
