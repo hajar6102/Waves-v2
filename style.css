@@ -25,11 +25,8 @@ header::after{
 .navbar-collapse{
     flex-grow: 0;
 }
-header ul.ul-border{
-    border: 1px solid grey;
-    border-radius: 20px;
-    border-width: auto;
-
+.nav{
+    --bs-nav-link-color: white;
 }
 header .btn{
     border-radius: 20px;
@@ -43,28 +40,21 @@ header .btn:hover{
     border-color :grey;
 }
 @media (max-width:992px){
+    
     header .btn.hide-btn{
         display: none;
     }
     .home .ai-image{
         width: 350px ;
     }
-    .home .text{
+    .home .text, .sm-screen-btn{
         width: 350px;
         text-align: center;
     }
+    .navbar-nav {
+        text-align: center;
+    }
     
-}
-.special-btn{
-    border-radius: 20px;
-    padding: 5px 15px;
-    color: white;
-    border: 1px solid gray;
-    background-color: black;
-    box-shadow: inset 1px 1px 6px;
-}
-.nav{
-    --bs-nav-link-color: white;
 }
 /*Home page*/
 .home {
@@ -86,10 +76,25 @@ header .btn:hover{
    padding: 7px 0;
 }
 @media (min-width:993px){
+header ul.ul-border{
+    border: 1px solid grey;
+    border-radius: 20px;
+    border-width: auto;
+
+}
 .home .ai-image{
     height: auto;
     width: 600px ;
 }
+.special-btn{
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: white;
+    border: 1px solid gray;
+    background-color: #154acf;
+    box-shadow: inset 1px 1px 6px;
+}
+
 .home .text{
     width: 500px;
 }
