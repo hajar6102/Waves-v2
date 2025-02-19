@@ -47,8 +47,11 @@ header .btn:hover{
     .home .ai-image{
         width: 350px ;
     }
-    .home .text, .sm-screen-btn{
+    .home .text{
         width: 350px;
+        text-align: center;
+    }
+    .sm-screen-btn{
         text-align: center;
     }
     .navbar-nav {
