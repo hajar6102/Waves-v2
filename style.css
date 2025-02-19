@@ -1,9 +1,14 @@
+:root{
+    --our-black:#01030F;
+}
 html,body{
     height: 100%;
-    background-color: #01030F;
-    color: white;
 }
 /* header */
+.special-bg{
+    background-color:var(--our-black);
+    color: white;
+} 
 header{
     position: relative;
 }
@@ -14,7 +19,7 @@ header::after{
     width:calc(100% - 20px);
     bottom: 15px;
     left: 0;
-    background-color: grey;
+    background-color:grey;
 }
 .nav-link, .navbar-nav .nav-link.active{
     color: white;
@@ -47,17 +52,18 @@ header .btn:hover{
     .home .ai-image{
         width: 350px ;
     }
-    .home .text{
-        width: 350px;
-        text-align: center;
+    .home .imge{
+      display: flex;
+      justify-content: center;
+
     }
-    .sm-screen-btn{
-        text-align: center;
+    .home .text,  .sm-screen-btn{
+        /* width: 350px;*/
+        text-align: center; 
     }
     .navbar-nav {
         text-align: center;
     }
-    
 }
 /*Home page*/
 .home {
@@ -75,9 +81,6 @@ header .btn:hover{
     background-position-x: 20px;
 }
 
-.home .text p{
-   padding: 7px 0;
-}
 @media (min-width:993px){
 header ul.ul-border{
     border: 1px solid grey;
@@ -89,14 +92,16 @@ header ul.ul-border{
     height: auto;
     width: 600px ;
 }
-
-.home .text{
-    width: 500px;
-}
 .home .text .main-heading{
-    font-size:55px;
-
+   font-weight: bold;
+   font-size: 55px;
 }
+.home .text p{
+    padding: 7px 0;
+    color: #D5D5D5;
+    font-size: 17px;
+    width: 500px;
+ }
 }
 .special-btn{
     border-radius: 20px;
