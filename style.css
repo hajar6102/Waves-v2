@@ -57,7 +57,9 @@ header .btn:hover{
       justify-content: center;
 
     }
-    .home .text,  .sm-screen-btn{
+    .home .text,
+    .sm-screen-btn,
+    .vision .text{
         /* width: 350px;*/
         text-align: center; 
     }
@@ -102,6 +104,9 @@ header ul.ul-border{
     font-size: 17px;
     width: 500px;
  }
+.vision .text p{
+    width: 700px;
+}
 }
 .special-btn{
     border-radius: 20px;
@@ -120,5 +125,19 @@ header ul.ul-border{
     background: linear-gradient(263deg, #9D9D9D 60%, #EDEDED 73%, #9D9D9D 87%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
+    
 }
+/*vision & mission*/
+.vision{
+    position: relative;
+    padding-top:100px ;
+    height: 100%;
+}
+.vision .main-heading{
+    color:#FF8200;
+    margin-bottom: 50px;
+}
+.vision .v-img{
+    width: 200px;
+    height: auto;
+ }
