@@ -1,5 +1,12 @@
 :root{
     --our-black:#01030F;
+    --our-orange:#FF8200;
+    --our-light-blue: #F4F9FF;
+    --our-dark-blue:#004AAD;
+    --our-navy-blue: #01030F; 
+    --our-gray:#B9B9B9;
+
+
 }
 html,body{
     height: 100%;
@@ -33,6 +40,9 @@ header::after{
 .nav{
     --bs-nav-link-color: white;
 }
+.fa-bars{
+    width: 1.5em;
+}
 header .btn{
     border-radius: 20px;
     padding: 5px 30px;
@@ -59,12 +69,32 @@ header .btn:hover{
     }
     .home .text,
     .sm-screen-btn,
-    .vision .text{
+    .vision .text,
+    .obje{
         /* width: 350px;*/
         text-align: center; 
     }
     .navbar-nav {
         text-align: center;
+    }
+    .obje .Card {
+        /* width: 100%; */
+        margin-bottom: 20px;
+    }
+    .col-md-6, .meet-the-team .card{
+        display: flex;
+        justify-content: center;
+    }
+    .vision, .obje, .meet-the-team{
+        padding:50px 0 ;
+    }
+    .vision .imge{
+        display: flex;
+        justify-content: center;
+    }
+    .meet-the-team .row{
+        display: flex;
+        justify-content: center;
     }
 }
 /*Home page*/
@@ -84,6 +114,9 @@ header .btn:hover{
 }
 
 @media (min-width:993px){
+header ul.navbar-nav {
+    padding: 0px 30px;
+}
 header ul.ul-border{
     border: 1px solid grey;
     border-radius: 20px;
@@ -104,9 +137,20 @@ header ul.ul-border{
     font-size: 17px;
     width: 500px;
  }
+ .vision, .obje, .meet-the-team{
+    padding:100px 0 ;
+}
 .vision .text p{
     width: 700px;
 }
+.vision .imge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meet-the-team h1{
+    font-size: 50px;
+  }
 }
 .special-btn{
     border-radius: 20px;
@@ -130,14 +174,179 @@ header ul.ul-border{
 /*vision & mission*/
 .vision{
     position: relative;
-    padding-top:100px ;
-    height: 100%;
+    /* height: 100%; */
 }
 .vision .main-heading{
-    color:#FF8200;
+    color: var(--our-orange);
     margin-bottom: 50px;
 }
-.vision .v-img{
-    width: 200px;
+.vision .vision-img{
+    width: 250px;
     height: auto;
  }
+/*objectives*/
+.obje{
+    background-color: var(--our-light-blue);
+}
+.obje h1{
+    color: var(--our-dark-blue);
+}
+/* flip-cards*/
+
+.obje .Card {
+    width: 250px;
+    height: 200px;
+    transition: 0.8s ease;
+    transform-style: preserve-3d;
+    transform-origin: top left;
+    position: relative;
+    z-index: 10;
+  
+  }
+  
+  .obje .Card:hover {
+    transform: translateX(100%) rotateY(180deg);
+    cursor: default;
+  }
+  
+  .obje .Card .front-card,
+  .obje .Card .back-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 0.8s ease;
+    transition-duration: 2s;
+  }
+  
+  .obje .Card .back-card {
+    background-color: white !important;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+    margin-right: 10px;
+  }
+  
+  .obje .Card .back-card p {
+    color: black !important;
+    font-size: .9rem !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .obje .Card .front-card {
+  
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .obje .obj-img{
+    width:100px;
+    position: absolute;
+    right: -12px;
+    bottom: -10px;
+ }
+  /*end*/
+  /*meet the team*/
+  .meet-the-team{
+    background-color: var(--our-navy-blue);
+  }
+  .meet-the-team  .nav-link{
+    color: var(--our-gray);
+    font-size: 20px;
+  }
+  .meet-the-team  .nav-link:hover{
+    color: var(--our-orange);
+  }
+  .meet-the-team  .nav-link.active {
+    color:var(--our-orange);
+  }
+  /* .meet-the-team .nav{
+    color: b;
+  } */
+  .meet-the-team ul{
+    position: relative;
+   }
+   .meet-the-team ul::after{
+    content:"";
+    position: absolute;
+    height: 1px;
+    width:100%;
+    bottom: -9px;
+    left: 0;
+    background-color:grey;
+}
+  .meet-the-team .card{
+    background-color: white;
+}
+  .card {
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    /* backdrop-filter: blur(10px); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    flex: 1 1 300px;
+    max-width: 300px;
+  }
+
+  .card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  .card p {
+    margin: 5px 0;
+    color: var(--our-gray);
+    font-size: 14px;
+  }
+  .card a{
+    color: var(--our-gray);
+  }
+  .card a:hover{
+    color: rgb(13 110 253);
+  }
+  
+.member-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .member-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .member-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .member-role {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+  }
+  
