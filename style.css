@@ -28,6 +28,15 @@ header::after{
     left: 0;
     background-color:grey;
 }
+.nav-link{
+  transition: .8s ease;
+}
+.nav-link:hover{
+  color: var(--our-dark-blue);
+  border-bottom: 1px solid var(--our-dark-blue);
+  transition: .8s ease-in;
+
+}
 .nav-link, .navbar-nav .nav-link.active{
     color: white;
 }
@@ -152,7 +161,7 @@ header ul.ul-border{
     width: 500px;
  }
  .obje, .meet-the-team, .vm{
-    padding:100px 0 ;
+    padding:200px 0 ;
 }
 .vision p,
 .mission p{

@@ -3,7 +3,7 @@ function toggleContent() {
     let missionContent = document.getElementById('mission-content');
     let toggleText = document.getElementById('toggle-text');
     let circle1 = document.getElementById('circle1');
-    let circle2 = document.getElementById('circle2');
+    let circle2 = document.getElementById('circle2');    
 
     if (toggleText.innerText === "Vision") {
         toggleText.innerText = "Mission";
