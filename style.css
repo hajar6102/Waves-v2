@@ -34,21 +34,25 @@ header::after{
 .nav-link:hover{
   color: var(--our-dark-blue);
   border-bottom: 1px solid var(--our-dark-blue);
-  transition: .8s ease-in;
+  transition: .3s ease-in;
 
 }
 .nav-link, .navbar-nav .nav-link.active{
     color: white;
 }
-.nav-link:focus, .nav-link:hover , .navbar-nav .nav-link.show {
+.nav-link.active:hover{
+  color: var(--our-dark-blue);
+  border-bottom: 1px solid var(--our-dark-blue);
+  transition: .3s ease-in;
+
+}
+.nav-link:focus , .navbar-nav .nav-link.show {
     color:white;
 }
 .navbar-collapse{
     flex-grow: 0;
 }
-.nav{
-    --bs-nav-link-color: white;
-}
+
 .fa-bars{
     width: 1.5em;
 }
@@ -75,6 +79,9 @@ header .btn:hover{
       display: flex;
       justify-content: center;
 
+    }
+    .home .imge img.s-wave{
+      display: none;
     }
     .home .text,
     .sm-screen-btn,
@@ -136,6 +143,7 @@ header .btn:hover{
     background-position-x: 20px;
 }
 
+
 @media (min-width:993px){
 header ul.navbar-nav {
     padding: 0px 30px;
@@ -149,6 +157,13 @@ header ul.ul-border{
 .home .ai-image{
     height: auto;
     width: 600px ;
+}
+.home .imge img.s-wave{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
 .home .text .main-heading{
    font-weight: bold;
