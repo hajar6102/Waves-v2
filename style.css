@@ -28,10 +28,10 @@ header::after{
     left: 0;
     background-color:grey;
 }
-.nav-link{
+header .nav-link{
   transition: .8s ease;
 }
-.nav-link:hover{
+header .nav-link:hover{
   color: var(--our-dark-blue);
   border-bottom: 1px solid var(--our-dark-blue);
   transition: .3s ease-in;
@@ -40,7 +40,7 @@ header::after{
 .nav-link, .navbar-nav .nav-link.active{
     color: white;
 }
-.nav-link.active:hover{
+header .nav-link.active:hover{
   color: var(--our-dark-blue);
   border-bottom: 1px solid var(--our-dark-blue);
   transition: .3s ease-in;
@@ -125,6 +125,9 @@ header .btn:hover{
     }
     .nav-in-phone h2{
       margin-bottom: 20px;
+    }
+    .meet-the-team .nav-link {
+      font-size: 15px !important;
     }
 }
 /*Home page*/
