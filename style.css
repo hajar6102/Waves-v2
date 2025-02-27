@@ -266,9 +266,7 @@ header ul.ul-border{
   .meet-the-team  .nav-link.active {
     color:var(--our-orange);
   }
-  /* .meet-the-team .nav{
-    color: b;
-  } */
+
   .meet-the-team ul{
     position: relative;
    }
@@ -290,7 +288,7 @@ header ul.ul-border{
     border-radius: 15px;
     padding: 20px;
     text-align: center;
-    /* backdrop-filter: blur(10px); */
+   
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, opacity 0.3s ease;
     flex: 1 1 300px;
@@ -351,3 +349,11 @@ header ul.ul-border{
     margin-bottom: 15px;
   }
   
+/*chat code*/
+.nav-tabs .nav-link {
+    color: gray;
+}
+.nav-tabs .nav-link.active {
+    color: var(--our-orange);
+    font-weight: bold;
+}
