@@ -68,24 +68,38 @@
     </section>
   </div>
 
-    <section class="vision">
-      <div class="container align-items-center">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-8">
-            <div class="text">
-              <h1 class="main-heading">Vision</h1>
-              <p>Our vision for the Robotics Society is to become a hub of innovation and excellence in robotics education and research within the university and beyond. We envision a dynamic community where students from diverse backgrounds and disciplines come together to explore the fascinating world of robotics, collaborate on innovative projects, and engage in cutting-edge research. By fostering a culture of curiosity, collaboration, and creativity, we aspire to inspire the next generation of robotics leaders and innovators who will shape the future of technology and society.</p>
-            </div>
+  <section class="vm">
+    <div class="container">
+        <!-- Single Toggle Button -->
+        <div id="toggle-btn" class="toggle-button" onclick="toggleContent()">
+          <div class="circles">
+            <div id="circle1" class="circle1 mb-1"></div>
+            <div id="circle2" class="circle2"></div>
           </div>
-          <div class="col-md-4">
-            <div class="imge">
-              <img class="vision-img" src="./images/vision.png" alt="">
-            </div>
-          </div>
+            <span id="toggle-text">Vision</span>
         </div>
-      </div>
-    </section>
-
+    
+        <!-- Vision Content -->
+        <section id="vision-content" class="vision content active row align-items-center">
+            <div class="col-md-8">
+                <p>Our vision for the Robotics Society is to become a hub of innovation and excellence in robotics education and research within the university and beyond. We envision a dynamic community where students from diverse backgrounds and disciplines come together to explore the fascinating world of robotics, collaborate on innovative projects, and engage in cutting-edge research.</p>
+            </div>
+            <div class="col-md-4">
+                <img class="vision-img" src="./images/vision.png" alt="Vision Image">
+            </div>
+        </section>
+    
+        <!-- Mission Content (Initially Hidden) -->
+        <section id="mission-content" class="mission content row align-items-center">
+            <div class="col-md-8">
+                <p>Our mission is to provide students with hands-on experiences in robotics, equipping them with the skills, knowledge, and mindset necessary to solve real-world problems. We aim to create a collaborative environment where students can develop technical expertise, engage in interdisciplinary teamwork, and apply innovative thinking to robotics challenges.</p>
+            </div>
+            <div class="col-md-4">
+                <img class="vision-img" src="./images/Oteam.jpeg" alt="Mission Image">
+            </div>
+        </section>
+  </div>
+  </section>
 
     <section class="obje">
       <div class="container">
@@ -153,7 +167,7 @@
 
     <section class="meet-the-team">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="nav-in-phone d-flex justify-content-between align-items-center">
           <h2 class="fw-bold text-light">Meet The Team</h2>
           <ul class="nav">
               <li class="nav-item">
@@ -332,7 +346,7 @@
 
 
 
-
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/257e1e7ee4.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

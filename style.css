@@ -69,7 +69,7 @@ header .btn:hover{
     }
     .home .text,
     .sm-screen-btn,
-    .vision .text,
+    .vm .content,
     .obje{
         /* width: 350px;*/
         text-align: center; 
@@ -85,7 +85,7 @@ header .btn:hover{
         display: flex;
         justify-content: center;
     }
-    .vision, .obje, .meet-the-team{
+    .vm, .obje, .meet-the-team{
         padding:50px 0 ;
     }
     .vision .imge{
@@ -96,6 +96,19 @@ header .btn:hover{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .toggle-button
+    {
+      
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+    .nav-in-phone{
+      flex-direction: column;
+    }
+    .nav-in-phone h2{
+      margin-bottom: 20px;
     }
 }
 /*Home page*/
@@ -138,10 +151,11 @@ header ul.ul-border{
     font-size: 17px;
     width: 500px;
  }
- .vision, .obje, .meet-the-team{
+ .obje, .meet-the-team, .vm{
     padding:100px 0 ;
 }
-.vision .text p{
+.vision p,
+.mission p{
     width: 700px;
 }
 .vision .imge{
@@ -173,18 +187,63 @@ header ul.ul-border{
     
 }
 /*vision & mission*/
+  /* Toggle Button Style */
+  .toggle-button {
+    display: flex;
+    align-items: center;
+    background: #f1f5f9;
+    border-radius: 30px;
+    padding: 10px 50px;
+    width: fit-content;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--our-orange);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Small Circle Indicator */
+.circle1,.circle2 {
+    width:8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+.circle1{
+  background: navy;
+}
+.circle2{
+  background: var(--our-gray);
+}
+
+/* Content Sections */
+.content {
+    display: none;
+}
+
+.content.active {
+    display: flex;
+}
+/*end*/
 .vision{
     position: relative;
     /* height: 100%; */
 }
-.vision .main-heading{
-    color: var(--our-orange);
+ .main-heading{
+   
     margin-bottom: 50px;
 }
 .vision .vision-img{
     width: 250px;
     height: auto;
  }
+ .mission img{
+  width: 400px;
+}
+
+
 /*objectives*/
 .obje{
     background-color: var(--our-light-blue);
